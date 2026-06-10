@@ -1,0 +1,37 @@
+body{
+    text-align: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.div{
+    padding: 10px;
+    background-color: black;
+    width: 200px;
+    align-content: center;
+    justify-content: center;
+    margin: 20px auto;
+    box-shadow: inset 0 0 0 5px rgb(0, 174, 255);
+    border-radius: 10px;
+}
+
+.divs{
+    background-color: aliceblue;
+    align-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 20px;
+}
+
+.divs button{
+    margin-bottom: 20px;
+    font-size: 20px;
+    background-color: white;
+}
+.divs input[type="number"]{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
