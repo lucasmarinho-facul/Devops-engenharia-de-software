@@ -1,0 +1,26 @@
+name: Verificação da Calculadora
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  verificar-arquivos:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar código do repositório
+        uses: actions/checkout@v4
+
+      - name: Verificar index.html
+        run: test -f index.html && echo "✓ index.html encontrado"
+
+      - name: Verificar style.css
+        run: test -f style.css && echo "✓ style.css encontrado"
+
+      - name: Verificar script.js
+        run: test -f script.js && echo "✓ script.js encontrado"
+
+      - name: Projeto validado
+        run: echo "Calculadora validada com sucesso!"
