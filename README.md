@@ -9,12 +9,13 @@ Para a demonstração, utilizamos uma calculadora desenvolvida com HTML, CSS e J
 Durante o desenvolvimento, buscamos entender conceitos fundamentais como workflows, eventos, jobs, steps e integração contínua (CI), observando na prática como a automação pode contribuir para tornar o desenvolvimento de software mais organizado, eficiente e confiável.
 
 ### Integrantes
-- Lucas Cardoso
-- Pedro Arthur
-- Arthur Garcez
-- Matheus Machado
-- Felipe Sudré
-- João Visctor Oliveira
+- Arthur Garcez de Moraes Carvalho​
+- Felipe Martins Sudré
+- João Victor Olivera dos Santos
+- Lucas Cardos Marinho
+- Mateus Santana Machado
+- Márcio Ribeiro da Costa Junior
+- Pedro Arthur Souza Napp
 ---
 
 
