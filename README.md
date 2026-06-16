@@ -8,6 +8,25 @@ Para a demonstração, utilizamos uma calculadora desenvolvida com HTML, CSS e J
 
 Durante o desenvolvimento, buscamos entender conceitos fundamentais como workflows, eventos, jobs, steps e integração contínua (CI), observando na prática como a automação pode contribuir para tornar o desenvolvimento de software mais organizado, eficiente e confiável.
 
+### Integrantes
+- Lucas Cardoso
+- Pedro Arthur
+- Arthur Garcez
+- Matheus Machado
+- Felipe Sudré
+- João Visctor Oliveira
+---
+
+
+## Como surgiu o GitHub Actions
+O GitHub Actions é uma ferramenta desenvolvida pelo GitHub para automatizar tarefas relacionadas ao desenvolvimento de software. Ela foi anunciada em versão beta em outubro de 2018 e disponibilizada oficialmente para todos os usuários da plataforma em novembro de 2019.
+Seu surgimento ocorreu devido à crescente necessidade de integrar práticas DevOps diretamente aos repositórios GitHub, permitindo que desenvolvedores automatizassem processos como compilação, testes e deploy sem depender de ferramentas externas.
+Atualmente, o GitHub Actions é uma das principais ferramentas de CI/CD do mercado, sendo amplamente utilizado em projetos de diferentes portes.
+
+
+
+
+
 ## O que é GitHub Actions?
 
 O GitHub Actions é a plataforma de automação e integração contínua (CI/CD) do GitHub. Ele permite automatizar tarefas dentro do ciclo de desenvolvimento de software diretamente no repositório.
@@ -213,7 +232,7 @@ O GitHub Actions pode ser integrado com:
 - dificuldade com estrutura YAML  
 - entendimento de workflows e jobs  
 - organização do repositório  
-
+- diferenças no nível de participação e interesse entre os integrantes da equipe, o que exigiu maior comunicação e coordenação do grupo.
 ---
 
 ## 📌 Conclusão
@@ -226,3 +245,22 @@ O GitHub Actions é ideal para:
 - deploy automatizado  
 
 Ele é mais indicado para projetos colaborativos e sistemas que precisam de automação frequente no desenvolvimento.
+
+
+# Referências
+
+### Documentação oficial
+- GitHub Actions: https://docs.github.com/actions  
+- GitHub Docs: https://docs.github.com/  
+
+### Materiais do projeto
+- Guia de uso do GitHub Actions (grupo): https://docs.google.com/document/d/1iBW1Y3v_JfQ8uyOvIQyD9j4DTzrVnPD9E7LJ937Cr9U/edit?usp=sharing  
+
+### Ferramentas de apoio
+- ChatGPT (OpenAI), utilizado como apoio para estudo, revisão e esclarecimento de dúvidas durante o desenvolvimento do projeto.
+
+## Links Úteis
+### Demonstração do Projeto
+- Slides da apresentação: https://1drv.ms/p/c/346abb8970c57c4d/IQB0jxHCvkTFQ6e_7CS706nXARK2n5TgCMCqq_5IcZZyhsQ?e=VttpW7
+---
+
