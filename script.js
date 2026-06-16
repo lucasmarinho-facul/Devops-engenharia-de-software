@@ -17,7 +17,7 @@ function calcularSoma(){
     document.getElementById('resultado').innerHTML = resultado;
 }
 
-function calcularMultiplicacao(){
+function calcularMultiplicacao({
 
     let n1 = parseFloat(document.getElementById("numero1").value);
     let n2 = parseFloat(document.getElementById("numero2").value);
