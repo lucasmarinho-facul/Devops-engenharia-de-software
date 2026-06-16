@@ -1,0 +1,52 @@
+name: Verificação do Projeto
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  verificar-arquivos:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar código do repositório
+        uses: actions/checkout@v4
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Verificar index.html
+        run: |
+          if [ -f index.html ]; then
+            echo "✓ index.html encontrado"
+          else
+            echo "❌ ERRO: O arquivo index.html não foi encontrado."
+            exit 1
+          fi
+
+      - name: Verificar style.css
+        run: |
+          if [ -f style.css ]; then
+            echo "✓ style.css encontrado"
+          else
+            echo "❌ ERRO: O arquivo style.css não foi encontrado."
+            exit 1
+          fi
+
+      - name: Verificar script.js
+        run: |
+          if [ -f script.js ]; then
+            echo "✓ script.js encontrado"
+          else
+            echo "❌ ERRO: O arquivo script.js não foi encontrado."
+            exit 1
+          fi
+
+      - name: Verificar sintaxe do JavaScript
+        run: node --check script.js
+
+      - name: Projeto validado
+        run: echo "🎉 Todos os arquivos foram encontrados e o JavaScript está válido!"
