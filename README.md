@@ -56,7 +56,7 @@ Esses arquivos definem:
 
 
 
-###  Exemplo prático
+##  Exemplo pratico
 
 Quando ocorre um `push` no repositório, o GitHub Actions pode automaticamente:
 
@@ -312,7 +312,7 @@ Ele é mais indicado para projetos colaborativos e sistemas que precisam de auto
 
 ---
 
-## Referências
+# Referências
 
 ### Documentação oficial
 - GitHub Actions: https://docs.github.com/actions  
