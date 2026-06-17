@@ -239,6 +239,8 @@ O comando node --check analisa o arquivo script.js em busca de erros de sintaxe,
 
 Durante toda a execução, o GitHub Actions gera logs automáticos contendo mensagens de sucesso ou falha para cada etapa do workflow, auxiliando na identificação de erros e no monitoramento da execução.
 
+---
+
 ## Logs e Outputs
 
 O GitHub Actions gera logs automáticos contendo:
