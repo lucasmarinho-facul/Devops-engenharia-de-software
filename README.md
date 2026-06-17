@@ -54,7 +54,6 @@ Esses arquivos definem:
 - o que será executado
 - em qual ambiente será executado
 
----
 
 ###  Exemplo prático
 
