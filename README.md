@@ -39,7 +39,7 @@ Com ele, é possível criar fluxos de trabalho (workflows) que são executados a
 - releases
 - execução manual ou agendada
 
----
+
 
 ###  Como ele funciona
 
@@ -53,6 +53,7 @@ Esses arquivos definem:
 - quando a automação será executada
 - o que será executado
 - em qual ambiente será executado
+
 
 
 ###  Exemplo prático
@@ -70,7 +71,7 @@ Quando ocorre um `push` no repositório, o GitHub Actions pode automaticamente:
 
 O GitHub Actions é formado por alguns elementos principais que juntos compõem a automação.
 
----
+
 
 ###  Workflow (Fluxo de trabalho)
 
@@ -86,7 +87,7 @@ O workflow define:
 - quando ele vai rodar  
 - o que ele vai executar  
 
----
+
 
 ###  Events (Eventos)
 
@@ -108,7 +109,7 @@ on:
 
  O workflow executa sempre que houver um push na branch main.
 
----
+
 
 ###  Jobs (Trabalhos)
 
@@ -122,7 +123,7 @@ Podem rodar:
 - em paralelo
 - ou em sequência  
 
----
+
 
 ###  Steps (Passos)
 
@@ -133,7 +134,7 @@ Exemplos:
 - instalar dependências
 - rodar testes  
 
----
+
 
 ###  Actions (Ações)
 
@@ -147,7 +148,7 @@ uses: actions/checkout@v4
 
 Baixa o código do repositório automaticamente.
 
----
+
 
 ###  Runners (Executores)
 
@@ -160,7 +161,7 @@ O GitHub fornece ambientes como:
 
 Também é possível configurar runners próprios (Self-hosted Runners).
 
----
+
 
 ##  Execução do Projeto 
 
@@ -169,7 +170,7 @@ O projeto não requer instalação de dependências.
 
 Basta abrir o arquivo `index.html` no navegador.
 
----
+
 
 ##  Integração com GitHub Actions
 
@@ -193,7 +194,7 @@ O workflow foi criado para validar automaticamente a estrutura do projeto sempre
 
 A seguir estão as etapas principais do workflow:
 
----
+
 
 ###  Download do código do repositório
 
@@ -264,7 +265,7 @@ Ele define:
 - jobs  
 - steps  
 
----
+
 
 ##  Integração com Outros Serviços
 
@@ -275,7 +276,7 @@ O GitHub Actions pode ser integrado com:
 - APIs externas  
 - ferramentas de CI/CD  
 
----
+
 
 ## Dificuldades Enfrentadas
 
@@ -284,7 +285,7 @@ O GitHub Actions pode ser integrado com:
 - entendimento de workflows e jobs  
 - organização do repositório  
 - diferenças no nível de participação e interesse entre os integrantes da equipe, o que exigiu maior comunicação e coordenação do grupo.
----
+
 
 ## Limitações do GitHub Actions
 
@@ -309,6 +310,7 @@ O GitHub Actions é ideal para:
 
 Ele é mais indicado para projetos colaborativos e sistemas que precisam de automação frequente no desenvolvimento.
 
+---
 
 ## Referências
 
