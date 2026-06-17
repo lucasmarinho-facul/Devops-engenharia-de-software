@@ -41,7 +41,7 @@ Com ele, é possível criar fluxos de trabalho (workflows) que são executados a
 
 ---
 
-### ⚙️ Como ele funciona
+###  Como ele funciona
 
 O GitHub Actions funciona através de arquivos YAML localizados no repositório:
 
@@ -56,7 +56,7 @@ Esses arquivos definem:
 
 ---
 
-### 🚀 Exemplo prático
+###  Exemplo prático
 
 Quando ocorre um `push` no repositório, o GitHub Actions pode automaticamente:
 
@@ -67,13 +67,13 @@ Quando ocorre um `push` no repositório, o GitHub Actions pode automaticamente:
 
 ---
 
-## ⚙️ Principais Componentes do GitHub Actions
+##  Principais Componentes do GitHub Actions
 
 O GitHub Actions é formado por alguns elementos principais que juntos compõem a automação.
 
 ---
 
-### 📌 Workflow (Fluxo de trabalho)
+###  Workflow (Fluxo de trabalho)
 
 É o processo automatizado criado dentro do GitHub Actions.
 
@@ -89,7 +89,7 @@ O workflow define:
 
 ---
 
-### 📌 Events (Eventos)
+###  Events (Eventos)
 
 São ações que iniciam o workflow.
 
@@ -107,11 +107,11 @@ on:
       - main
 ```
 
-👉 O workflow executa sempre que houver um push na branch main.
+ O workflow executa sempre que houver um push na branch main.
 
 ---
 
-### 📌 Jobs (Trabalhos)
+###  Jobs (Trabalhos)
 
 São blocos de tarefas dentro do workflow.
 
@@ -125,7 +125,7 @@ Podem rodar:
 
 ---
 
-### 📌 Steps (Passos)
+###  Steps (Passos)
 
 São as tarefas dentro de um job.
 
@@ -136,7 +136,7 @@ Exemplos:
 
 ---
 
-### 📌 Actions (Ações)
+###  Actions (Ações)
 
 São comandos prontos criados pela comunidade ou pelo GitHub.
 
@@ -146,11 +146,11 @@ Exemplo:
 uses: actions/checkout@v4
 ```
 
-👉 Baixa o código do repositório automaticamente.
+Baixa o código do repositório automaticamente.
 
 ---
 
-### 📌 Runners (Executores)
+###  Runners (Executores)
 
 São as máquinas que executam os workflows.
 
@@ -163,16 +163,16 @@ Também é possível configurar runners próprios (Self-hosted Runners).
 
 ---
 
-## 💻 Execução do Projeto 
+##  Execução do Projeto 
 
-### 📌 Execução Local
+###  Execução Local
 O projeto não requer instalação de dependências.
 
 Basta abrir o arquivo `index.html` no navegador.
 
 ---
 
-## 🔗 Integração com GitHub Actions
+##  Integração com GitHub Actions
 
 O GitHub Actions foi utilizado para automatizar tarefas dentro do repositório.
 
@@ -188,7 +188,58 @@ on:
 
 ---
 
-## 📊 Logs e Outputs
+##  Workflow Implementado
+
+O workflow foi criado para validar automaticamente a estrutura do projeto sempre que ocorre um push na branch `main`.
+
+A seguir estão as etapas principais do workflow:
+
+---
+
+###  Download do código do repositório
+
+```yaml
+- name: Baixar código do repositório
+  uses: actions/checkout@v4
+
+```
+Esse passo utiliza a action oficial actions/checkout@v4, responsável por baixar uma cópia do repositório para a máquina virtual do GitHub Actions, permitindo que as próximas etapas tenham acesso aos arquivos do projeto.
+
+### Instalação do Node.js
+```yaml
+- name: Instalar Node.js
+  uses: actions/setup-node@v4
+  with:
+    node-version: 22
+```
+Essa etapa instala e configura o ambiente Node.js na versão 22, possibilitando a execução de comandos JavaScript durante o workflow.
+
+### Verificação dos arquivos do projeto
+```yaml
+- name: Verificar index.html
+  run: |
+    if [ -f index.html ]; then
+      echo "✓ index.html encontrado"
+    else
+      echo "❌ ERRO: O arquivo index.html não foi encontrado."
+      exit 1
+    fi
+```
+Esse trecho verifica se o arquivo index.html está presente no repositório. Caso o arquivo não seja encontrado, o workflow é interrompido e uma mensagem de erro é exibida. O mesmo processo é realizado para os arquivos style.css e script.js.
+
+### Validação da sintaxe JavaScript
+```yaml
+- name: Verificar sintaxe do JavaScript
+  run: node --check script.js
+```
+
+O comando node --check analisa o arquivo script.js em busca de erros de sintaxe, garantindo que o código JavaScript esteja estruturado corretamente.
+
+### Exibição dos resultados
+
+Durante toda a execução, o GitHub Actions gera logs automáticos contendo mensagens de sucesso ou falha para cada etapa do workflow, auxiliando na identificação de erros e no monitoramento da execução.
+
+## Logs e Outputs
 
 O GitHub Actions gera logs automáticos contendo:
 
@@ -201,7 +252,7 @@ Esses logs podem ser visualizados na aba **Actions** do GitHub.
 
 ---
 
-## ⚙️ Configuração Básica
+##  Configuração Básica
 
 O workflow foi configurado na pasta:
 
@@ -216,7 +267,7 @@ Ele define:
 
 ---
 
-## 🚧 Integração com Outros Serviços
+##  Integração com Outros Serviços
 
 O GitHub Actions pode ser integrado com:
 
@@ -227,7 +278,7 @@ O GitHub Actions pode ser integrado com:
 
 ---
 
-## ⚠️ Dificuldades Enfrentadas
+## Dificuldades Enfrentadas
 
 - poucos membros tinham experiência com GitHub Actions  
 - dificuldade com estrutura YAML  
@@ -236,7 +287,7 @@ O GitHub Actions pode ser integrado com:
 - diferenças no nível de participação e interesse entre os integrantes da equipe, o que exigiu maior comunicação e coordenação do grupo.
 ---
 
-## 📌 Conclusão
+##  Conclusão
 
 O GitHub Actions é ideal para:
 
