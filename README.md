@@ -311,7 +311,7 @@ O GitHub Actions é ideal para:
 Ele é mais indicado para projetos colaborativos e sistemas que precisam de automação frequente no desenvolvimento.
 
 
-# Referências
+## Referências
 
 ### Documentação oficial
 - GitHub Actions: https://docs.github.com/actions  
