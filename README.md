@@ -312,7 +312,7 @@ Ele é mais indicado para projetos colaborativos e sistemas que precisam de auto
 
 ---
 
-# Referências
+## Referencias
 
 ### Documentação oficial
 - GitHub Actions: https://docs.github.com/actions  
