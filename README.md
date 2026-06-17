@@ -250,7 +250,6 @@ O GitHub Actions gera logs automáticos contendo:
 
 Esses logs podem ser visualizados na aba **Actions** do GitHub.
 
----
 
 ##  Configuração Básica
 
