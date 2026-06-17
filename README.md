@@ -1,4 +1,4 @@
-# Devops-engenharia-de-software
+# Github-Actions-engenharia-de-software
 
 ## Sobre o Projeto
 
@@ -28,7 +28,7 @@ Atualmente, o GitHub Actions é uma das principais ferramentas de CI/CD do merca
 
 
 
-## O que é GitHub Actions?
+### O que é GitHub Actions?
 
 O GitHub Actions é a plataforma de automação e integração contínua (CI/CD) do GitHub. Ele permite automatizar tarefas dentro do ciclo de desenvolvimento de software diretamente no repositório.
 
@@ -287,6 +287,18 @@ O GitHub Actions pode ser integrado com:
 - diferenças no nível de participação e interesse entre os integrantes da equipe, o que exigiu maior comunicação e coordenação do grupo.
 ---
 
+## Limitações do GitHub Actions
+
+Apesar de ser uma ferramenta poderosa para automação e CI/CD, o GitHub Actions possui algumas limitações, como:
+
+- Dependência da infraestrutura do GitHub para execução dos workflows;
+- Limitações de tempo e recursos em runners hospedados;
+- Necessidade de configuração adicional para pipelines mais complexos;
+- Possíveis dificuldades de debug em workflows mais extensos;
+- Não substitui completamente testes locais ou ambientes de staging dedicados.
+
+Essas limitações mostram que, apesar de eficiente, o GitHub Actions deve ser utilizado de forma complementar dentro de uma arquitetura de desenvolvimento de software.
+
 ##  Conclusão
 
 O GitHub Actions é ideal para:
@@ -303,13 +315,15 @@ Ele é mais indicado para projetos colaborativos e sistemas que precisam de auto
 
 ### Documentação oficial
 - GitHub Actions: https://docs.github.com/actions  
-- GitHub Docs: https://docs.github.com/  
 
 ### Materiais do projeto
 - Guia de uso do GitHub Actions (grupo): https://docs.google.com/document/d/1iBW1Y3v_JfQ8uyOvIQyD9j4DTzrVnPD9E7LJ937Cr9U/edit?usp=sharing  
 
 ### Ferramentas de apoio
 - ChatGPT (OpenAI), utilizado como apoio para estudo, revisão e esclarecimento de dúvidas durante o desenvolvimento do projeto.
+
+### Estrutura e organização
+- Guia utilizado como referência para estruturação de README em projetos DevOps: https://github.com/Guia-Devops-Iniciante/Readme
 
 ## Links Úteis
 ### Demonstração do Projeto
